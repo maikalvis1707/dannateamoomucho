@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Danna 💖</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: #111;
+            color: black;
+            text-align: center;
+            overflow: hidden;
+            font-size: 18px;
+        }
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .carta {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 50px auto;
+            width: 80%;
+            max-width: 700px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 0 20px rgba(255, 182, 193, 0.8);
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background: #ff66b2;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .btn:hover {
+            background: #ff3385;
+        }
+        .menu {
+            margin-top: 20px;
+        }
+        .menu a {
+            color: #ffb6c1;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .menu a:hover {
+            color: pink;
+        }
+        .seccion {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .timer {
+            margin-top: 30px;
+            font-size: 22px;
+        }
+
+        /* Estilo para las imágenes de la galería */
+        .galeria {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .galeria img {
+            width: 100%;
+            max-width: 300px;  /* Limitar el tamaño máximo de cada imagen */
+            height: auto;  /* Mantener la proporción de la imagen */
+            border-radius: 10px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted>
+        <source src="elamor.mp4" type="video/mp4">
+    </video>
+
+    <audio autoplay loop>
+        <source src="Jay Wheeler - Me Enamoré (Cover Audio).mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <div class="carta">
+        <h1>Mi amor, Danna 💖</h1>
+        <p>Quiero que sepas cuánto te amo, y por eso preparé esta pequeña sorpresa para ti.</p>
+        <button class="btn" onclick="mostrarSeccion('sorpresa')">Ver Sorpresa</button>
+
+        <div class="menu">
+            <a href="#" onclick="mostrarSeccion('sobre')">Sobre Danna</a>
+            <a href="#" onclick="mostrarSeccion('razones')">Razones</a>
+            <a href="#" onclick="mostrarSeccion('galeria')">Galería</a>
+            <a href="#" onclick="mostrarSeccion('gracias')">Gracias</a>
+        </div>
+
+        <div id="sobre" class="seccion">
+            <h2>Sobre Danna</h2>
+            <p>Tu esencia es lo que más me enamora. Eres la persona más increíble que he conocido. No hay un solo día en el que no me sienta afortunado de tenerte a mi lado.</p>
+        </div>
+
+        <div id="razones" class="seccion">
+            <h2>Razones por las que te amo</h2>
+            <ul>
+                <li>Tu risa es mi música favorita.</li>
+                <li>Me haces sentir especial con solo una mirada.</li>
+                <li>Siempre sabes cómo darme apoyo cuando más lo necesito.</li>
+                <li>Porque en tus brazos siento que todo está bien.</li>
+            </ul>
+        </div>
+
+        <div id="galeria" class="seccion">
+            <h2>Nuestros momentos</h2>
+            <div class="galeria">
+                <img src="imagen1.jpg.jpg" alt="Foto juntos">
+                <img src="imagen2.jpg.jpg" alt="Foto juntos">
+            </div>
+        </div>
+
+        <div id="sorpresa" class="seccion">
+            <h2>Tu sorpresa 🎁</h2>
+            <p>
+                Hoy se cumplen 26 meses junto a ti, mi amor, y quiero aprovechar para expresarte cuánto te adoro. Me esforcé haciendo este pequeño detalle porque tú eres el amor de mi vida, el que llena mis días de felicidad. No me alcanzan las palabras para describir lo que siento por ti, pero aquí va un pedacito de todo mi corazón: ¡Te amo con todo mi ser! 🌟
+                Lo hice con todo el cariño y sin querer que terminara nunca este momento. Eres el motor que mueve mi vida. ¡Te amo más de lo que imaginas!
+            </p>
+        </div>
+
+        <div id="gracias" class="seccion">
+            <h2>Gracias por estar conmigo 💖</h2>
+            <p>
+                Gracias por estar conmigo. Espero siempre estar a tu lado. Perdóname si alguna vez te hice sentir mal, sé que no esperabas nada, pero me hice el mayor esfuerzo para hacerte esta página web. Te amo mucho, te amo bastante, mi amor de mi vida. ¡Eres todo para mí! 💖
+            </p>
+        </div>
+
+        <div class="timer">
+            Celebrando nuestro nuevo mes en: <br>
+            <span id="temporizador"></span>
+        </div>
+    </div>
+
+    <script>
+        function mostrarSeccion(id) {
+            document.querySelectorAll('.seccion').forEach(seccion => seccion.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+
+        function actualizarTemporizador() {
+            const fechaObjetivo = new Date('2025-04-20T00:00:00').getTime();
+            const intervalo = setInterval(() => {
+                const ahora = new Date().getTime();
+                const diferencia = fechaObjetivo - ahora;
+                if (diferencia <= 0) {
+                    document.getElementById('temporizador').innerHTML = "¡Feliz nuevo mes juntos! 💖";
+                    clearInterval(intervalo);
+                } else {
+                    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+                    const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+                    document.getElementById('temporizador').innerHTML = `${dias} días, ${horas} horas y ${minutos} minutos`;
+                }
+            }, 1000);
+        }
+
+        actualizarTemporizador();
+    </script>
+</body>
+</html>
